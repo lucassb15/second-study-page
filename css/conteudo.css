@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.pre {
+    width: 73px;
+    height: 73px;
+    border: 8px solid #e5e5e5;
+    border-top-color: rgb(122, 38, 161);
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    animation: load 2s infinite linear;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+.box-load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292b2c;
+}
+header{
+    background-color: #000103;
+    width: 35%;
+    margin-left: 50%;
+    z-index: 1;
+
+}
+.header-box h1{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 64px;
+    color: #fff;
+    width: auto;
+}
+.header-box img{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.d-flex{
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-100{
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.zoom {
+    overflow: hidden;
+    
+}
+.zoom img{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+   
+}
+.border-1{
+    position: absolute;
+    height: 85vh;
+    width: 30%;
+    margin-right: 8em;
+    margin-top: -10em;
+    border-width: 20em;
+    background-color: rgb(101, 18, 134);
+    z-index: -2;
+}
+.border-2{
+    position: absolute;
+    height: 80vh;
+    width: 25%;
+    margin-right: -12em;
+    margin-top: 10em;
+    border-width: 20em;
+    background-color: rgb(101, 18, 134);
+    z-index: -2;
+}
+.mt-m3{
+    margin-top: -3em;
+    
+}
+
+.arrow-color{
+    color: #ff8500;
+    text-align: start;
+    margin-left: 0.6em;
+    font-size: 55px;
+    margin-top: -0.5em;
+}
+
+.bg-container{
+    width: 35%;
+    text-align: center;
+    background-color: #000103;
+    margin-top: -8em;
+    margin-left: 10em;
+}
+.index{
+    z-index: 1;
+}
+.text-author-align{
+    margin-right: 5em;
+    width: 73%;
+    font-size: 18px;
+    
+    
+}
+
