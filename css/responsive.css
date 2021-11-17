@@ -88,7 +88,7 @@
         text-align: center;
         font-size: 55px;
         margin-top: -0.5em;
-       
+        margin-left: 0;
     }
     .text-container{
         margin-top: 2em;
@@ -97,6 +97,47 @@
     .carousel-item {
         height: 15rem !important;
       }
+      footer{
+        margin: 0;
+        padding: 0;
+      
+      }
+      footer h2{
+        font-family: 'Black Han Sans', sans-serif;
+        font-weight: 100;
+        font-size: 9px;
+        text-align: center;
+        transition-duration:unset;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .row{
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .icones i{
+        color: #ffffff;
+        font-size: 12px;
+        letter-spacing: none !important;
+        text-decoration: none;
+        text-transform: none;
+        transition-duration:unset;
+    }
+    .col-sm-6{
+            flex: 0 0 auto;
+            width: 47% !important;
+           
+    }
+    .col-sm-7{
+        flex: 0 0 auto;
+        width: 53% !important;
+        
+        
+}
+    .arrows{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px)   {

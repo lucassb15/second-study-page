@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -43,6 +44,7 @@ header {
     width: 35%;
     margin-left: 50%;
     z-index: 1;
+    transition-duration: 2s;
 }
 
 .header-box h1 {
@@ -58,8 +60,108 @@ header {
     background-position: center;
 }
 
+/* ARROW DOWN */
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: -5rem;
+}
+.arrows path {
+    stroke: #8029d1;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+ /*  END ARROW */
+
+/* Stick */
+.stick{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    position: absolute;
+    width: 0.5%;
+    height: 300px;
+    margin-top: 5rem;
+    margin-left: 50.075%;
+    border-right: 11px solid rgba(122, 38, 161, 0.795);
+}
+.stick2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    position: absolute;
+    width: 0.5%;
+    height: 300px;
+    margin-top: -24rem;
+    margin-left: 50.075%;
+    border-right: 11px solid rgba(122, 38, 161, 0.795);
+}
+#plx{
+    position: absolute;
+    margin-top: 20rem;
+}
 .d-flex {
-    display: flex!important;
+    display: flex !important;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
@@ -124,6 +226,8 @@ header {
     margin-left: 0.6em;
     font-size: 55px;
     margin-top: -0.5em;
+    width: 65%;
+    text-align: center;
 }
 
 .bg-container {
@@ -157,10 +261,12 @@ header {
     filter: grayscale(1);
     opacity: 0.7;
 }
-.margintp{
+
+.margintp {
     margin-top: 30em;
-    margin-bottom: 10em;
+    margin-bottom: 30em;
 }
+
 .text-center-parallax {
     width: 100%;
     height: 100%;
@@ -191,4 +297,37 @@ header {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+}
+
+
+/* Footer */
+footer{
+    background-color: black;
+    padding: 7rem;
+    margin-top: 0;
+}
+footer h2{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 8px;
+    transition-duration: 2s;
+   
+}
+footer h2:hover{
+    color: blueviolet;
+}
+.icones i{
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 30px;
+    text-decoration: none;
+    text-transform: none;
+    transition-duration: 2s;
+}
+.icones i:hover{
+    color: blueviolet;
+}
+.icones a{
+    text-decoration: none;
+    text-transform: none;
 }
