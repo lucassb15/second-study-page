@@ -94,6 +94,9 @@
         margin-top: 2em;
         text-align: center !important;
     }
+    .carousel-item {
+        height: 20rem !important;
+      }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px)   {
